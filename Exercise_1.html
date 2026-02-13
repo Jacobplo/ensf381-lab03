@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lab3 -- Exercise 1</title>
+</head>
+<body>
+<h1>JavaScript Lab Exercise 1</h1>
+<script>
+    const a = 50;
+    var b = 51;
+    let c = 52;
+    try{
+    let c = 53;
+    throw new Error("Reassignment of Variable")
+    }
+    catch(e){
+        console.log(e)
+    }
+    let string1 = "Hello, World!"
+    let string2 = "JavaScript is fun!"
+    console.log(string1.length)
+    console.log(string1,string2)
+    let string3 = string2.replace("fun","awesome")
+    console.log(string3)
+    let name = "Alice"
+    let age = 25
+    let template = new String(`My name is ${name} and I am ${age}`)
+    console.log(template);
+    const students = ["Alice", "Tom", "Charlie"]
+    const ages = [19, 21, 20]
+    for(let i = 0;i<students.length;i++){
+        let name =  students[i] 
+        let age = ages[i]
+        console.log(`My name is ${name} and I am ${age}`)
+    }
+    let date = new Date();
+    console.log(date.toLocaleDateString('en-CA'));
+    console.log(date.toLocaleDateString('en-US'));
+    console.log(date.getMonth());
+    console.log(date.toLocaleDateString('en-CA', { weekday: 'long' }));
+    console.log(date.getMonth())
+    if (date.getMonth() > 10 || date.getMonth() < 2){
+        console.log("Winter")
+    }
+    else if(date.getMonth()<5){
+        console.log("Spring")
+    }
+    else if(date.getMonth()<8){
+        console.log("Summer")
+    }
+    else{
+        console.log("Fall")
+    }
+</script>
+</body>
+</html>
