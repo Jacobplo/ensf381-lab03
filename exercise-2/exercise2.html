@@ -32,10 +32,10 @@
       var subtract = (x, y) => x - y;
       var multiply = (x, y) => x * y;
       var divide = (x, y) => {
+        // Handles division by 0 error
         if (y == 0) {
           let e = Error("Division by 0");
           console.log(e);
-          return e;
         }
 
         return x / y;
@@ -46,7 +46,7 @@
       }
 
       console.log(calculator(5, 2, add));
-      console.log(calculator(5, 2, divide));
+      console.log(calculator(5, 0, divide));
     </script> 
 </body> 
  
