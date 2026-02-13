@@ -20,8 +20,9 @@ let classInfo = {
     semester: "Winter",
     year: 2025,
   },
-  schedule: ["Monday", "Wednesday", "Friday"],
 };
+
+classInfo.schedule = ["Monday", "Wednesday", "Friday"];
 
 classInfo.instructor = "Dr.Abdellatif";
 
