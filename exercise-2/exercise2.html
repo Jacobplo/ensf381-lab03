@@ -34,8 +34,7 @@
       var divide = (x, y) => {
         // Handles division by 0 error
         if (y == 0) {
-          let e = Error("Division by 0");
-          console.log(e);
+          throw new Error("Division by 0")
         }
 
         return x / y;
@@ -46,7 +45,7 @@
       }
 
       console.log(calculator(5, 2, add));
-      console.log(calculator(5, 0, divide));
+      console.log(calculator(5, 2, divide));
     </script> 
 </body> 
  
