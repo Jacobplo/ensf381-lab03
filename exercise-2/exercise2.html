@@ -33,9 +33,11 @@
       var multiply = (x, y) => x * y;
       var divide = (x, y) => {
         if (y == 0) {
-          console.log("Error: Cannot divide by 0")
-          return;
+          let e = Error("Division by 0");
+          console.log(e);
+          return e;
         }
+
         return x / y;
       };
 
